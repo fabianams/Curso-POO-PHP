@@ -1,5 +1,5 @@
 <!--
-    Usa classe Livro e Pessoa criadas nos arquivos Livro.php e Pessoa.php
+    Usa classe Livro e Pessoa criadas nos arquivos Livro.php e Leitor.php
 
  -->  
 
@@ -15,10 +15,10 @@
      <?php
 
     require_once "Livro.php";
-    require_once "Pessoa.php";
+    require_once "Leitor.php";
 
-        $leitor[0]= new Pessoa("Pedro", 22, "M");
-        $leitor[1]= new Pessoa("Maria", 31, "F");
+        $leitor[0]= new Leitor("Pedro", 22, "M");
+        $leitor[1]= new Leitor("Maria", 31, "F");
 
         $livro[0] = new Livro("PHP Básico", "Zé das Couves", 100, $leitor[0]);
         $livro[1] = new Livro("POO com PHP", "Maria do Socorro", 350, $leitor[0]);
